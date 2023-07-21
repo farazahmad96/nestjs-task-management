@@ -51,6 +51,6 @@ export class TasksController {
     @Param('id') id: string,
     @Body('status') status: TaskStatus,
   ): Task {
-    return this.tasksService.updateTestStatus(id, status);
+    return this.tasksService.updateTeskStatus(id, status);
   }
 }
