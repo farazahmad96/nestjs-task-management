@@ -50,6 +50,7 @@ export class TasksService {
   }
 
   updateTeskStatus(id: string, status: TaskStatus): Task {
+    console.log('status', status);
     const task = this.getTaskById(id);
     task.status = status;
     return task;
